@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="colorBox colorBoxRed"></div>
+        <div class="colorBox colorBoxGreen"></div>
+        <div class="colorBox colorBoxBlue"></div>
+        <div class="colorBox colorBoxYellow"></div>
+        <a class="next" href="./delite.html">
+            <label for="nextPage">Next Task</label>
+            <img id="nextPage" src="./img/arrow.png" alt="arrow">
+        </a>
+        <h2>COLORS</h2>
+    </div>
+    <script>
+        const wrap = document.querySelector('.wrap');
+        const red = document.querySelector('.colorBoxRed');
+        const green = document.querySelector('.colorBoxGreen');
+        const blue = document.querySelector('.colorBoxBlue');
+        const yellow = document.querySelector('.colorBoxYellow');
+        red.addEventListener('click', function(){
+            alert('red')
+            wrap.style.backgroundColor = 'red';
+        });
+        green.addEventListener('click', function(){
+            alert('green')
+            wrap.style.backgroundColor = 'green';
+        });
+        blue.addEventListener('click', function(){
+            alert('blue')
+            wrap.style.backgroundColor = 'blue';
+        });
+        yellow.addEventListener('click', function(){
+            alert('yellow')
+            wrap.style.backgroundColor = 'yellow';
+        });
+    </script>
+</body>
+</html>
